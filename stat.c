@@ -7,7 +7,7 @@
 #include "job.h"
 #define DEBUG
 /* 
- * �����﷨��ʽ
+ * ÃüÁîÓï·¨¸ñÊ½
  *     stat
  */
 void usage()
@@ -34,7 +34,7 @@ int main(int argc,char *argv[])
 	#ifdef DEBUG
 		printf("statcmd cmdtype\t%d (-1 means ENQ, -2 means DEQ, -3 means STAT)\n"
 			"statcmd owner\t%d\n",
-			enqcmd.type,enqcmd.owner);
+			statcmd.type,statcmd.owner);
 
     #endif 
 	
