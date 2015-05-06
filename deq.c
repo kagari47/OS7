@@ -7,7 +7,7 @@
 #include "job.h"
 #define DEBUG
 /* 
- * �����﷨��ʽ
+ * ÃüÁîÓï·¨¸ñÊ½
  *     deq jid
  */
 void usage()
@@ -38,7 +38,7 @@ int main(int argc,char *argv[])
 	#ifdef DEBUG
 		printf("deqcmd cmdtype\t%d (-1 means ENQ, -2 means DEQ, -3 means STAT)\n"
 			"deqcmd owner\t%d\n",
-			enqcmd.type,enqcmd.owner);
+			deqcmd.type,deqcmd.owner);
     #endif 
 
 	if((fd=open("/tmp/server",O_WRONLY))<0)
